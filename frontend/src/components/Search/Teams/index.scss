@@ -1,0 +1,32 @@
+body {
+    background-color: #00274C;
+}
+
+.team-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 200px;
+  }
+  
+  .team-card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 60%; /* Adjust the width as needed */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-card div {
+    margin: 10px 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .team-card {
+      width: 90%; /* Adjust the width for smaller screens */
+    }
+  }
+  

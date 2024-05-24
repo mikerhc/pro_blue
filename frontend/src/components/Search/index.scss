@@ -1,0 +1,22 @@
+.text-zone {
+  position: absolute;
+  top: calc(50% - 80px); /* Adjust as needed */
+  transform: translateY(-50%);
+  left: 50%;
+  width: 40%;
+  top: 50%;
+  max-height: 90%;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 100px; /* Adjust as needed to place it below the nav bar */
+}
+
+@media screen and (max-width: 1150px) {
+  .text-zone {
+    position: initial;
+    width: 100%;
+    transform: none;
+    margin: 20px auto; /* Center horizontally */
+  }
+}

@@ -1,0 +1,139 @@
+.home-page{ 
+    .text-zone { 
+        position: absolute; 
+        align-content: center;
+        left: 10%; 
+        top: calc(50% - 80px);
+        transform: translateY(-50%); 
+        width: 40%; 
+        max-height: 90%; 
+        display: absolute;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1{
+        color: #ffffff; 
+        font-size: 60px; 
+        margin: 0; 
+        font-weight: 600; 
+        cursor: pointer;
+    }
+    h2{
+        color:#ffffff;
+    }
+
+    .flat-button { 
+        border: none;
+        color: #00274C;
+        background-color: #FFCB05;
+        display: inline-block;
+        border-radius: 10px;
+        background-size: 100% auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding: 0.6em 1.5em;
+        white-space: nowrap;
+        text-decoration: none;
+        margin-top: 25px; 
+ 
+        white-space: nowrap; 
+        width: 200px;
+    }
+
+    .player-card-container {
+        display: flex;
+        //overflow: hidden; /* Hide the overflow */
+        padding: 20px 0;
+        overflow-x: scroll;
+        margin-top: 720px;
+        white-space: nowrap;
+        gap:30px;
+        scroll-behavior: smooth;
+      }
+      
+      .player-card {
+        flex: 0 0 auto;
+        display: inline-block;
+        background-color: #b6b6b6bd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-right: 15px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        animation: scroll 25s linear infinite;
+        position: relative;
+      }
+      
+      .player-card div {
+        margin: 5px 0;
+      }
+      .player-card img {
+        height:150px;
+      }
+      
+      /* Keyframes for scrolling animation */
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-147.2vw);
+        }
+      }
+}
+
+@media screen and (max-width: 1580px){
+    .home-page{
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+@media screen and (max-width: 1320px){
+    .home-page{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width: 1150px){
+    .home-page{
+        h1{
+            font-size: 29px; 
+            justify-content: center;
+            letter-spacing: 0.5px; 
+        }
+        .text-zone{
+            position: initial;
+            width: 100%; 
+            transform: none;
+            padding: 10px;
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: left;
+            margin-left: 20px;
+        }
+        h2 {
+            font-size: 12px;
+        }
+
+        .logo-container {
+            position: relative; 
+            width: 200px;
+            height: auto; 
+            right: 0; 
+            box-sizing: border-box; 
+            margin: auto; 
+            left: 0; 
+        }
+
+        .flat-button{
+            float: none;
+            display: block;
+            // width: 125px;
+        }
+    }
+}
