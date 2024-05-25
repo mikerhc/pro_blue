@@ -26,22 +26,25 @@ public class Player {
     private String name;
     private String team;
     private String position;
+    private String rosterUrl;
     
     public Player(){
 
     }
 
-    public Player(Long id, String name, String team, String position){
+    public Player(Long id, String name, String team, String position, String rosterUrl){
         this.id = id;
         this.name = name;
         this.team = team;
         this.position = position;
+        this.rosterUrl = rosterUrl;
     }
 
-    public Player(String name, String team, String position){
+    public Player(String name, String team, String position, String rosterUrl){
         this.name = name;
         this.team = team;
         this.position = position;
+        this.rosterUrl = rosterUrl;
     }
 
     public Long getId(){
@@ -76,9 +79,17 @@ public class Player {
         this.position = position;
     }
 
+    public String getRosterUrl(){
+        return this.rosterUrl;
+    }
+    
+    public void setRosterUrl(String rosterUrl){
+        this.rosterUrl = rosterUrl;
+    }
+
     @Override
     public String toString(){
-        return "Player{" + "id=" + id + ", name ='" + name + '\'' + ", team =" + team + '\'' + ", position=" + position + '}';
+        return "Player{" + "id=" + id + ", name ='" + name + '\'' + ", team =" + team + '\'' + ", position=" + position + '\'' + ", rosterUrl =" + rosterUrl + '}';
     }
 
 }

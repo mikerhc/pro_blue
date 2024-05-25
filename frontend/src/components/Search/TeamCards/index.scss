@@ -11,6 +11,7 @@ body {
   margin-top: 200px;
 }
 
+
 .team-card {
   background-color: #f0f0f0;
   border-radius: 8px;
@@ -18,6 +19,10 @@ body {
   width: 60%;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-card :hover{
+  cursor: pointer;
 }
 
 .team-info {
@@ -29,6 +34,20 @@ body {
 .player-count {
   /* Existing styles */
   margin-right: 10px; /* Add this line */
+  font-size: 1.2em;
+}
+
+.view-team-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #00274C;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
 }
 
 
@@ -36,7 +55,7 @@ body {
   /* Existing styles */
   position: absolute;
   top: 50%;
-  right: 10px; /* Adjust the distance from the right */
+  right: 25px; /* Adjust the distance from the right */
   transform: translateY(-50%);
 }
 
@@ -61,8 +80,9 @@ body {
 
 .player-info {
   display: flex;
-  justify-content: space-between;
   padding: 5px 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .team-card.expanded .team-players {

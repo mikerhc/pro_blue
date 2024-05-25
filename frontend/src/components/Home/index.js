@@ -16,20 +16,20 @@ import junior from '../../assets/junior.png';
 import dpj from '../../assets/dpj.png';
 
 const players = [
-    {id: 1, name: "Blake Corum", team: "Los Angeles Rams", position: "RB", imageUrl: blake},
-    {id: 2, name: "Brandon Graham", team: "Philadelphia Eagles", position: "DE", imageUrl: brandon},
-    {id: 3, name: "Mikey Sainristil", team: "Washington Commanders", position: "CB", imageUrl: mikey},
-    {id: 4, name: "Aidan Hutchinson", team: "Detroit Lions", position: "DE", imageUrl: hutch},
-    {id: 5, name: "Jabrill Peppers", team: "New England Patriots", position: "S", imageUrl: jabrill},
-    {id: 6, name: "JJ McCarthy", team: "Minnesota Vikings", position: "QB", imageUrl: jj},
-    {id: 7, name: "Kris Jenkins", team: "Cincinnati Bengals", position: "DT", imageUrl: kris},
-    {id: 8, name: "Jake Moody", team: "San Francisco 49ers", position: "K", imageUrl: moody},
-    {id: 9, name: "Nico Collins", team: "Houston Texans", position: "WR", imageUrl: nico},
-    {id: 10, name: "Rashan Gary", team: "Green Bay Packers", position: "DE", imageUrl: rashan},
-    {id: 11, name: "Junior Colson", team: "Los Angeles Chargers", position: "LB", imageUrl: junior},
-    {id: 12, name: "Donovan Peoples-Jones", team: "Detroit Lions", position: "WR", imageUrl: dpj}
+    {id: 1, name: "Blake Corum", team: "Los Angeles Rams", position: "RB", imageUrl: blake, teamUrl: "rams"},
+    {id: 2, name: "Brandon Graham", team: "Philadelphia Eagles", position: "DE", imageUrl: brandon, teamUrl: "eagles"},
+    {id: 3, name: "Mikey Sainristil", team: "Washington Commanders", position: "CB", imageUrl: mikey, teamUrl: "commies"},
+    {id: 4, name: "Aidan Hutchinson", team: "Detroit Lions", position: "DE", imageUrl: hutch, teamUrl: "lions"},
+    {id: 5, name: "Jabrill Peppers", team: "New England Patriots", position: "S", imageUrl: jabrill, teamUrl: "patriots"},
+    {id: 6, name: "JJ McCarthy", team: "Minnesota Vikings", position: "QB", imageUrl: jj, teamUrl: "vikings"},
+    {id: 7, name: "Kris Jenkins", team: "Cincinnati Bengals", position: "DT", imageUrl: kris, teamUrl: "bengals"},
+    {id: 8, name: "Jake Moody", team: "San Francisco 49ers", position: "K", imageUrl: moody, teamUrl: "niners"},
+    {id: 9, name: "Nico Collins", team: "Houston Texans", position: "WR", imageUrl: nico, teamUrl: "texans"},
+    {id: 10, name: "Rashan Gary", team: "Green Bay Packers", position: "DE", imageUrl: rashan, teamUrl: "packers"},
+    {id: 11, name: "Junior Colson", team: "Los Angeles Chargers", position: "LB", imageUrl: junior, teamUrl: "chargers"},
+    {id: 12, name: "Donovan Peoples-Jones", team: "Detroit Lions", position: "WR", imageUrl: dpj, teamUrl: "lions"}
 ];
-const Home = () => {
+const Home = ({ teamData }) => {
     return(
         <>
             <div className = "home-page">
@@ -42,7 +42,7 @@ const Home = () => {
                 <Logo className="Home"/>
                 <div className="player-card-container">
                     {players.map((player) => (
-                        <Link to={`teams/player.team`}key={player.id} className="player-card">
+                        <Link to={`/team/${player.teamUrl}`}key={player.id} className="player-card">
                             <img src={player.imageUrl} alt={player.name}/>
                             <div>{player.name}</div>
                             <div>{player.team}</div>
@@ -50,7 +50,7 @@ const Home = () => {
                         </Link>
                     ))}
                     {players.map((player) => (
-                        <Link to={`teams/player.team`}key={player.id} className="player-card">
+                        <Link to={`/team/${player.teamUrl}`} key={player.id} className="player-card">
                             <img src={player.imageUrl} alt={player.name}/>
                             <div>{player.name}</div>
                             <div>{player.team}</div>

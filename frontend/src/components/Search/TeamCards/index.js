@@ -2,34 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import "./index.scss";
-
-import ravens from '../../../assets/teams/ravens.png';
-import panthers from '../../../assets/teams/panther.png';
-import bengals from '../../../assets/teams/bengals.png';
-import browns from '../../../assets/teams/browns.png';
-import cowboys from '../../../assets/teams/cowboys.png';
-import lions from '../../../assets/teams/lions.png';
-import pack from '../../../assets/teams/pack.png';
-import texans from '../../../assets/teams/texans.png';
-import colts from '../../../assets/teams/colts.png';
-import chiefs from '../../../assets/teams/chiefs.png';
-import chargers from '../../../assets/teams/chargers.png';
-import rams from '../../../assets/teams/rams.png';
-import raiders from '../../../assets/teams/raiders.png';
-import phins from '../../../assets/teams/phins.png';
-import viks from '../../../assets/teams/viks.png';
-import pats from '../../../assets/teams/pats.png';
-import saints from '../../../assets/teams/saints.png';
-import giants from '../../../assets/teams/giants.png';
-import jets from '../../../assets/teams/jets.png';
-import eagles from '../../../assets/teams/eagles.png';
-import steelers from '../../../assets/teams/steelers.png';
-import seahawks from '../../../assets/teams/seahawks.png';
-import niners from '../../../assets/teams/niners.png';
-import bucs from '../../../assets/teams/bucs.png';
-import titans from '../../../assets/teams/titans.png';
-import commies from '../../../assets/teams/commies.png';
-
+import { Link } from 'react-router-dom';
+/*
 const teams = [
     {id: 1, name: "Baltimore Ravens", imageUrl: ravens},
     {id: 2, name: "Carolina Panthers", imageUrl: panthers},
@@ -58,12 +32,13 @@ const teams = [
     {id: 25, name: "Tennessee Titans", imageUrl: titans},
     {id: 26, name: "Washington Commanders", imageUrl: commies}
 ];
+*/
 
-const TeamCards = ({ data }) => {
+const TeamCards = ({ playerData, teamData }) => {
     const [expandedTeam, setExpandedTeam] = useState(null);
 
     const countPlayersOnTeam = (teamName) => {
-        const teamPlayers = data.filter(team => team.team === teamName);
+        const teamPlayers = playerData.filter(team => team.team === teamName);
         return teamPlayers.length;
     };
 
@@ -71,9 +46,11 @@ const TeamCards = ({ data }) => {
         setExpandedTeam(expandedTeam === teamId ? null : teamId);
     };
 
+    //console.log(%PUBLIC_URL%)
+
     return (
       <div className='team-card-container'>
-        {teams.map((team) => (
+        {teamData.map((team) => (
           <div
             className={`team-card ${expandedTeam === team.id ? 'expanded' : ''}`}
             key={team.name}
@@ -83,19 +60,19 @@ const TeamCards = ({ data }) => {
               <img src={team.imageUrl} alt={`${team.name} logo`} />
               <div className='team-name'>{team.name}</div>
             </div>
-            <div className='player-count'>{countPlayersOnTeam(team.name)} Michigan</div>
             <div className='arrow-icon'>
               <FontAwesomeIcon icon={expandedTeam === team.id ? faChevronUp : faChevronDown} />
             </div>
             {expandedTeam === team.id && (
               <div className='team-players'>
-                {data.filter(player => player.team === team.name).map(player => (
-                  <div key={player.id} className='player-info'>
-                    <div>{player.name}</div>
-                    <div>{player.position}</div>
-                    <div>{player.number}</div>
-                  </div>
+                {playerData.filter(player => player.team === team.name).map(player => (
+                  <Link to={player.rosterUrl} key={player.id} className='player-info'>
+                    <div>{player.name}, {player.position}</div>
+                  </Link>
                 ))}
+                <Link to={`/team/${team.url}`} className='view-team-button'>
+                  View Team
+                </Link>
               </div>
             )}
           </div>
