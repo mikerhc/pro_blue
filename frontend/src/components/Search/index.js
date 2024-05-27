@@ -1,28 +1,56 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import TeamCards from './TeamCards';
 import "./index.scss";
+import { Link } from 'react-router-dom';
+
 
 const Search = ({ playerData, teamData }) => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filteredData, setFilteredData] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredPlayers, setFilteredPlayers] = useState([]);
 
-  console.log(teamData);
   // Function to handle input change
-  const handleInputChange = (e) => {
-    const value = e.target.value;
-    setSearchTerm(value);
-
-    // Filter data based on search term
-    const filteredResults = playerData.filter(item =>
-      item.name.toLowerCase().includes(value.toLowerCase()) ||
-      item.team.toLowerCase().includes(value.toLowerCase()) ||
-      item.position.toLowerCase().includes(value.toLowerCase())
+  useEffect(() => {
+    setFilteredPlayers(
+      playerData.filter(player =>
+        player.name.toLowerCase().includes(searchQuery.toLowerCase())
+      )
     );
-    setFilteredData(filteredResults);
+  }, [searchQuery, playerData]);
+
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
   };
 
+
   return (
+    <div className="search-page">
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Search players..."
+          value={searchQuery}
+          onChange={handleSearchChange}
+        />
+        <button className="search-button">
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
+      </div>
+      {searchQuery && filteredPlayers.length > 0 && (
+        <div className="player-list">
+          {filteredPlayers.map(player => (
+            <Link to={`/team/${player.teamUrl}`} key={player.id} className="player-info">
+              <img src={player.imageUrl} alt={player.name} />
+              <div className='player-name'>{player.name}</div>
+              <div>{player.team}</div>
+              <div>{player.position}</div>
+            </Link>
+          ))}
+        </div>
+      )}
     <TeamCards playerData={playerData} teamData={teamData}/>
+    </div>
   );
 };
 

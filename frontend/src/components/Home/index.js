@@ -37,14 +37,14 @@ const Home = ({ teamData }) => {
                     <h1>Michigan Football Players in the NFL</h1>
                     <h2>Explore your favorite Michigan Alumni in the NFL</h2> 
                     <h2>See upcoming games, stats, and add their games to your calendar!</h2>
-                    <Link to="/search" className="flat-button">GET STARTED</Link>
+                    <Link to="/search" className="flat-button">EXPLORE</Link>
                 </div>
                 <Logo className="Home"/>
                 <div className="player-card-container">
                     {players.map((player) => (
                         <Link to={`/team/${player.teamUrl}`}key={player.id} className="player-card">
                             <img src={player.imageUrl} alt={player.name}/>
-                            <div>{player.name}</div>
+                            <div className='player-name'>{player.name}</div>
                             <div>{player.team}</div>
                             <div>{player.position}</div>
                         </Link>
@@ -52,7 +52,7 @@ const Home = ({ teamData }) => {
                     {players.map((player) => (
                         <Link to={`/team/${player.teamUrl}`} key={player.id} className="player-card">
                             <img src={player.imageUrl} alt={player.name}/>
-                            <div>{player.name}</div>
+                            <div className='player-name'>{player.name}</div>
                             <div>{player.team}</div>
                             <div>{player.position}</div>
                         </Link>

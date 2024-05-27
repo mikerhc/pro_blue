@@ -3,7 +3,7 @@
         position: absolute; 
         align-content: center;
         left: 10%; 
-        top: calc(50% - 180px);
+        top: calc(50% - 100px);
         transform: translateY(-50%); 
         width: 40%; 
         max-height: 90%; 
@@ -54,7 +54,7 @@
       .player-card {
         flex: 0 0 auto;
         display: inline-block;
-        background-color: #b6b6b6bd;
+        background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin-right: 15px;
@@ -66,12 +66,17 @@
         animation: scroll 25s linear infinite;
         position: relative;
       }
+
       
       .player-card div {
         margin: 5px 0;
       }
       .player-card img {
         height:150px;
+      }
+
+      .player-name{
+        font-weight: bold;
       }
       
       /* Keyframes for scrolling animation */

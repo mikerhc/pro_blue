@@ -1,4 +1,4 @@
-import Natty from '../../../assets/natty_logo.png';
+import Natty from '../../../assets/logos/natty_logo.png';
 import './index.scss';
 
 const Logo = () => {

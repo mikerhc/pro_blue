@@ -26,22 +26,28 @@ public class Team {
     private String name;
     private String imageUrl;
     private String url;
-    
+    private Integer espnId;
+    private String gcal;
+
     public Team(){
 
     }
 
-    public Team(Long id, String name, String imageUrl, String url){
+    public Team(Long id, String name, String imageUrl, String url, Integer espnId, String gcal){
         this.id = id;
         this.name = name;
         this.imageUrl = imageUrl;
         this.url = url;
+        this.espnId = espnId;
+        this.gcal = gcal;
     }
 
-    public Team(String name, String imageUrl, String url){
+    public Team(String name, String imageUrl, String url, Integer espnId, String gcal){
         this.name = name;
         this.imageUrl = imageUrl;
         this.url = url;
+        this.espnId = espnId;
+        this.gcal = gcal;
     }
 
     public Long getId(){
@@ -72,13 +78,29 @@ public class Team {
         return this.url;
     }
 
-    public void setUrl(String url){
+    public void seturl(String url){
         this.url = url;
+    }
+
+    public Integer getEspnId(){
+        return this.espnId;
+    }
+
+    public void setEspnId(Integer espnId){
+        this.espnId = espnId;
+    }
+
+    public String getGCal(){
+        return this.gcal;
+    }
+
+    public void setGCal(String gcal){
+        this.gcal = gcal;
     }
 
     @Override
     public String toString(){
-        return "Team{" + "id=" + id + ", name ='" + name + '\'' + ", imageUrl =" + imageUrl + '\'' + ", url=" + url + '}';
+        return "Team{" + "id=" + id + ", name ='" + name + '\'' + ", imageUrl =" + imageUrl + '\'' + ", url=" + url + ", espnId=" + espnId + ", gcal=" + gcal + '}';
     }
 
 }
