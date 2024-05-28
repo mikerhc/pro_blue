@@ -244,7 +244,7 @@ public class PlayerConfig {
             );
 
             Player green = new Player(
-                "Germon Green",
+                "Gemon Green",
                 "Green Bay Packers",
                 "CB",
                 "https://www.packers.com/team/players-roster/gemon-green/",
