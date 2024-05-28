@@ -6,7 +6,7 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:22-jdk-slim
 
-COPY --from=build /target/umich_nfl.0.0.1-SNAPSHOT.jar umich_nfl.jar
+COPY --from=build /app/target/umich_nfl.0.0.1-SNAPSHOT.jar umich_nfl.jar
 
 EXPOSE 8080
 
