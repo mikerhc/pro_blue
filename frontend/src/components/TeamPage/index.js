@@ -36,7 +36,6 @@ const TeamPage = ({ playerData, teamData }) => {
   let games = scheduleData.events;
   let stadium = "";
   let broadcast = "";
-  let region = "";
   let date = new Date()
   let time = "";
   if (games){
@@ -80,10 +79,10 @@ const TeamPage = ({ playerData, teamData }) => {
             </div>
             <div className='player-socials'>
               <a href={player.insta} className='insta'>
-                <img src={insta} className='social-icon'/>
+                <img src={insta} className='social-icon' alt='insta'/>
               </a>
               <a href={player.twitter} className='twitter'>
-                <img src={x} className='social-icon'/>
+                <img src={x} className='social-icon' alt='twitter'/>
               </a>
             </div>
           </div>

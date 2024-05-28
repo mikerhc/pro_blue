@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import "./index.scss";
 import { Link } from 'react-router-dom';
 
 
 const TeamCards = ({ playerData, teamData }) => {
     const [expandedTeam, setExpandedTeam] = useState(null);
-
-    const countPlayersOnTeam = (teamName) => {
-        const teamPlayers = playerData.filter(team => team.team === teamName);
-        return teamPlayers.length;
-    };
 
     const toggleExpand = (teamId) => {
         setExpandedTeam(expandedTeam === teamId ? null : teamId);

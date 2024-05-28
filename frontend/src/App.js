@@ -9,7 +9,6 @@ import TeamPage from './components/TeamPage';
 function App() {
 const [playerData, setPlayerData] = useState([]);
 const [teamData, setTeamData] = useState([]);
-const [error, setError] = useState([]);
 
 useEffect(() => {
   const fetchPlayerData = async() => {
@@ -24,7 +23,6 @@ useEffect(() => {
       setPlayerData(responseData);
     } catch(error){
       console.error("Error getting player data");
-      setError(error.message || 'An error occurred');
     }
   };
 
@@ -40,7 +38,6 @@ useEffect(() => {
       setTeamData(responseData);
     } catch(error){
       console.error("Error getting team data");
-      setError(error.message || 'An error occurred');
     }
   };
 
