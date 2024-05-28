@@ -61,7 +61,7 @@ const TeamPage = ({ playerData, teamData }) => {
   return (
     <div className="team-page">
       <img src={team.imageUrl} alt={team.name} className='team-logo'/>
-      <h1 className='team-name'>{team.name}</h1>
+      <h1 className='team-name-page'>{team.name}</h1>
       <Link className='gcal-link' to={team.gcal}>Add the {team.name} Calendar!</Link>
       {games && (
         <div className='next-game-container'>

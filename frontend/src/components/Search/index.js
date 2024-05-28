@@ -43,8 +43,8 @@ const Search = ({ playerData, teamData }) => {
             <Link to={`/team/${player.teamUrl}`} key={player.id} className="player-info">
               <img src={player.imageUrl} alt={player.name} />
               <div className='player-name'>{player.name}</div>
-              <div>{player.team}</div>
-              <div>{player.position}</div>
+              <div className='player-team'>{player.team}</div>
+              <div className='player-pos'>{player.position}</div>
             </Link>
           ))}
         </div>

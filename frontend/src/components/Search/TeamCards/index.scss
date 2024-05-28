@@ -28,14 +28,11 @@ body {
 .team-info {
   display: flex;
   align-items: center;
+  position: relative;
   cursor: pointer;
+  color:#00274C;
 }
 
-.player-count {
-  /* Existing styles */
-  margin-right: 10px; /* Add this line */
-  font-size: 1.2em;
-}
 
 .view-team-button {
   display: block;
@@ -71,6 +68,13 @@ body {
 .team-name {
   font-size: 1.2em;
   font-weight: bold;
+  display: grid;
+  position: absolute;
+  left:50%;
+  top:50%;
+  color: black;
+  //margin:auto;
+  transform: translate(-50%, -50%);
 }
 
 

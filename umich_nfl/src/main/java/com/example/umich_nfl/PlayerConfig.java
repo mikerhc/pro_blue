@@ -218,7 +218,7 @@ public class PlayerConfig {
                 "lions",
                 "",
                 "https://www.instagram.com/dpeoplesjones/?hl=en",
-                "https://www.instagram.com/dpeoplesjones/?hl=en"
+                "https://x.com/dpeoplesjones"
             );
 
             Player turner = new Player(
@@ -240,7 +240,7 @@ public class PlayerConfig {
                 "packers",
                 "",
                 "https://www.instagram.com/rashanagary/?hl=en",
-                "https://x.com/RashanAGary?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                "https://x.com/RashanAGary"
             );
 
             Player green = new Player(

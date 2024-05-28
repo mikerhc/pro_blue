@@ -31,7 +31,7 @@ const TeamCards = ({ playerData, teamData }) => {
               <img src={team.imageUrl} alt={`${team.name} logo`} />
               <div className='team-name'>{team.name}</div>
             </div>
-            {!expandedTeam && (
+            {expandedTeam !== team.id && (
               <div className='arrow-icon-down'>
                 <FontAwesomeIcon icon={faChevronDown} />
               </div>
