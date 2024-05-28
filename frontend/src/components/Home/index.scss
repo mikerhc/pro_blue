@@ -3,7 +3,7 @@
         position: absolute; 
         align-content: center;
         left: 10%; 
-        top: calc(50% - 100px);
+        top: calc(50% - 72px);
         transform: translateY(-50%); 
         width: 40%; 
         max-height: 90%; 
@@ -11,14 +11,13 @@
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
     h1{
-        color: #ffffff; 
-        font-size: 60px; 
+        color: #ffffff;
         margin: 0; 
-        font-weight: 600; 
-        cursor: pointer;
+        font-weight: 600;
+        font-size: medium;
     }
     h2{
-        color:#ffffff;
+        color:#d0d0d0;
     }
 
     .flat-button { 
@@ -34,7 +33,6 @@
         padding: 0.6em 1.5em;
         white-space: nowrap;
         text-decoration: none;
-        margin-top: 25px; 
  
         white-space: nowrap; 
         width: 200px;
@@ -45,7 +43,7 @@
         //overflow: hidden; /* Hide the overflow */
         padding: 20px 0;
         overflow-x: scroll;
-        margin-top: 720px;
+        margin-top: 420px;
         white-space: nowrap;
         gap:30px;
         scroll-behavior: smooth;
@@ -58,12 +56,12 @@
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin-right: 15px;
-        padding: 10px;
-        width: 200px;
+        width: 180px;
+        height: 180px;
         text-align: center;
         text-decoration: none;
         color: inherit;
-        animation: scroll 25s linear infinite;
+        animation: scroll 30s linear infinite;
         position: relative;
       }
 
@@ -72,12 +70,17 @@
         margin: 5px 0;
       }
       .player-card img {
-        height:150px;
+        height:100px;
       }
 
       .player-name{
         font-weight: bold;
       }
+
+      .player-team{
+        font-size: 0.9em;
+      }
+      
       
       /* Keyframes for scrolling animation */
       @keyframes scroll {
@@ -85,7 +88,7 @@
           transform: translateX(0);
         }
         100% {
-          transform: translateX(-147.2vw);
+          transform: translateX(-221vw);
         }
       }
 }

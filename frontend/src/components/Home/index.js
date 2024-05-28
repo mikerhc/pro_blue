@@ -2,18 +2,18 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 import Logo from "./Logo";
 
-import blake from '../../assets/blake.png';
-import brandon from '../../assets/brandon.png';
-import mikey from '../../assets/frozone.png';
-import hutch from '../../assets/hutch.png';
-import jabrill from '../../assets/jabrill.png';
-import jj from '../../assets/jj.png';
-import kris from '../../assets/kris.png';
-import moody from '../../assets/moody.png';
-import nico from '../../assets/nico.png';
-import rashan from '../../assets/rashan.png';
-import junior from '../../assets/junior.png';
-import dpj from '../../assets/dpj.png';
+import blake from '../../assets/teams/rams/blake.png';
+import brandon from '../../assets/teams/eagles/brandon.png';
+import mikey from '../../assets/teams/commies/frozone.png';
+import hutch from '../../assets/teams/lions/hutch.png';
+import jabrill from '../../assets/teams/pats/jabrill.png';
+import jj from '../../assets/teams/viks/jj.png';
+import kris from '../../assets/teams/bengals/kris.png';
+import moody from '../../assets/teams/niners/moody.png';
+import nico from '../../assets/teams/texans/nico.png';
+import rashan from '../../assets/teams/pack/rashan.png';
+import junior from '../../assets/teams/chargers/junior.png';
+import dpj from '../../assets/teams/lions/dpj.png';
 
 const players = [
     {id: 1, name: "Blake Corum", team: "Los Angeles Rams", position: "RB", imageUrl: blake, teamUrl: "rams"},
@@ -45,16 +45,16 @@ const Home = ({ teamData }) => {
                         <Link to={`/team/${player.teamUrl}`}key={player.id} className="player-card">
                             <img src={player.imageUrl} alt={player.name}/>
                             <div className='player-name'>{player.name}</div>
-                            <div>{player.team}</div>
-                            <div>{player.position}</div>
+                            <div className='player-team'>{player.team}</div>
+                            <div className='player-pos'>{player.position}</div>
                         </Link>
                     ))}
                     {players.map((player) => (
                         <Link to={`/team/${player.teamUrl}`} key={player.id} className="player-card">
                             <img src={player.imageUrl} alt={player.name}/>
                             <div className='player-name'>{player.name}</div>
-                            <div>{player.team}</div>
-                            <div>{player.position}</div>
+                            <div className='player-team'>{player.team}</div>
+                            <div className='player-pos'>{player.position}</div>
                         </Link>
                     ))}
                     

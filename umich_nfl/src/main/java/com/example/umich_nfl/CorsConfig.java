@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:3000", "https://mcgillscheduler.vercel.app/")
+                        .allowedOrigins("http://localhost:3000", "https://master--problue.netlify.app/")
                         .allowedMethods("GET");
             }
         };

@@ -19,7 +19,7 @@ const Navbar = () => {
                 <img src={MLogo} alt="logo" />
             </Link>
             <nav className={showNav ? 'mobile-show' : ""}>
-                <NavLink exact="true" activeClassName="active" to="/search" onClick={closeNav}>
+                <NavLink exact="true" className="active" to="/search" onClick={closeNav}>
                     <FontAwesomeIcon icon={faSearch} />
                 </NavLink>
             </nav>
