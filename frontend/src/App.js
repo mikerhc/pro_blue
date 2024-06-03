@@ -13,7 +13,7 @@ const [teamData, setTeamData] = useState([]);
 useEffect(() => {
   const fetchPlayerData = async() => {
     try{
-      const response = await fetch('https://pro-blue.onrender.com/api/v1/player')
+      const response = await fetch('http://localhost:8080/api/v1/player')
       if (!response.ok){
         throw new Error("Failed to fetch player data");
       }
@@ -28,7 +28,7 @@ useEffect(() => {
 
   const fetchTeamData = async() => {
     try{
-      const response = await fetch('https://pro-blue.onrender.com/api/v1/team')
+      const response = await fetch('http://localhost:8080/api/v1/team')
       if (!response.ok){
         throw new Error("Failed to fetch team data");
       }
