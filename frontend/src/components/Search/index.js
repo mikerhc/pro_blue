@@ -36,6 +36,7 @@ const Search = ({ playerData, teamData }) => {
   const [filteredPlayers, setFilteredPlayers] = useState([]);
 
   // Function to handle input change
+  console.log(teamData);
   useEffect(() => {
     setFilteredPlayers(
       playerData.filter(player =>
