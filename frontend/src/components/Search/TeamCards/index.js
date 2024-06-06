@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import "./index.scss";
 import { Link } from 'react-router-dom';
+//set dynamic image paths
+const images = require.context('../../../assets/teams', true, /\.png$/);
+//actually get the images
+const getImage = (teamName) => images(`./${teamName}/${teamName}.png`);
 
 
 const TeamCards = ({ playerData, teamData }) => {
@@ -23,7 +27,7 @@ const TeamCards = ({ playerData, teamData }) => {
             onClick={() => toggleExpand(team.id)}
           >
             <div className='team-info'>
-              <img src={team.imageUrl} alt={`${team.name} logo`} />
+              <img src={getImage(team.url)} alt={`${team.name} logo`} />
               <div className='team-name'>{team.name}</div>
             </div>
             {expandedTeam !== team.id && (

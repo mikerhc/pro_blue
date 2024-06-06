@@ -4,11 +4,23 @@ import './index.scss';
 import x from '../../assets/logos/x.png';
 import insta from '../../assets/logos/insta.png';
 
+//set dynamic image paths
+const images = require.context('../../assets/teams', true, /\.png$/);
+//actually get the images
+const getTeamImage = (teamName) => images(`./${teamName}/${teamName}.png`);
+const getPlayerImage = (teamName, playerName) => images(`./${teamName}/${playerName}.png`);
+
 const TeamPage = ({ playerData, teamData }) => {
   const [scheduleData, setScheduleData] = useState([]);
   const { teamName } = useParams();
   const team = teamData.find(team => team.url === teamName);
   const players = playerData.filter(player => team.name === player.team);
+
+  players.map(player => {
+    console.log(player)
+    console.log(getPlayerImage(team.url, player.imageUrl));
+
+  })
   //console.log(players);
 
   useEffect(() => {
@@ -31,7 +43,7 @@ const TeamPage = ({ playerData, teamData }) => {
 
   }, [team]);
 
-  console.log(scheduleData);
+  //console.log(scheduleData);
   const today = new Date();
   let games = scheduleData.events;
   let stadium = "";
@@ -59,7 +71,7 @@ const TeamPage = ({ playerData, teamData }) => {
   }
   return (
     <div className="team-page">
-      <img src={team.imageUrl} alt={team.name} className='team-logo'/>
+      <img src={getTeamImage(team.url)} alt={team.name} className='team-logo'/>
       <h1 className='team-name-page'>{team.name}</h1>
       <Link className='gcal-link' to={team.gcal}>Add the {team.name} Calendar!</Link>
       {games && (
@@ -72,7 +84,7 @@ const TeamPage = ({ playerData, teamData }) => {
       <div className="team-players">
         {players.map(player => (
           <div key={player.id} className="player-card">
-            <img src={player.imageUrl} alt={player.name} className='player-pics'/>
+            <img src={getPlayerImage(team.url, player.imageUrl)} alt={player.name} className='player-pics'/>
             <div className='player-info'>
               <div>{player.name}</div>
               <div>{player.position}</div>

@@ -18,7 +18,7 @@ public class PlayerConfig {
                 "OLB",
                 "https://www.baltimoreravens.com/team/players-roster/david-ojabo/",
                 "ravens",
-                "./assets/ojabo.png",
+                "ojabo",
                 "https://www.instagram.com/davidojabo/?hl=en",
                 "https://x.com/davidojabo"
             );
@@ -29,7 +29,7 @@ public class PlayerConfig {
                 "ILB",
                 "https://www.baltimoreravens.com/team/players-roster/josh-ross/",
                 "ravens",
-                ".assets/ross.png",
+                "ross",
                 "https://www.instagram.com/joshuaross_12/?hl=en",
                 "https://x.com/Ravens"
             );
@@ -40,7 +40,7 @@ public class PlayerConfig {
                 "ILB",
                 "https://www.panthers.com/team/players-roster/michael-barrett/",
                 "panthers",
-                "./assets/barrett",
+                "barrett",
                 "https://www.instagram.com/mike.mb1/?hl=en",
                 "https://x.com/mikebarrett_mb1?lang=en"
             );
@@ -51,7 +51,7 @@ public class PlayerConfig {
                 "RB",
                 "https://www.bengals.com/team/players-roster/chris-evans/",
                 "bengals",
-                "",
+                "evans",
                 "https://www.instagram.com/kidnplay_abc123/",
                 "https://x.com/kidnplay_abc123?lang=en"
             );
@@ -62,7 +62,7 @@ public class PlayerConfig {
                 "S",
                 "https://www.bengals.com/team/players-roster/dax-hill/",
                 "bengals",
-                "",
+                "hill",
                 "https://www.instagram.com/iamdaxhill/",
                 "https://x.com/daxhill5?lang=en"
             );
@@ -73,7 +73,7 @@ public class PlayerConfig {
                 "DT",
                 "https://www.bengals.com/team/players-roster/kris-jenkins/",
                 "bengals",
-                "",
+                "kris",
                 "https://www.instagram.com/kjj_18/?hl=en",
                 "https://x.com/krisjenkinsjr1?lang=en"
             );
@@ -84,7 +84,7 @@ public class PlayerConfig {
                 "PT",
                 "https://www.bengals.com/team/players-roster/brad-robbins/",
                 "bengals",
-                "",
+                "robbins",
                 "https://www.instagram.com/__bradrobbins/?hl=en",
                 "https://x.com/__br91?lang=en"
             );
@@ -95,7 +95,7 @@ public class PlayerConfig {
                 "CB",
                 "https://www.bengals.com/team/players-roster/dj-turner-ii/",
                 "bengals",
-                "",
+                "turner",
                 "https://www.instagram.com/djturner_5/?hl=en",
                 "https://x.com/djturner_5?lang=en"
             );
@@ -106,7 +106,7 @@ public class PlayerConfig {
                 "LB",
                 "https://www.clevelandbrowns.com/team/players-roster/devin-bush/",
                 "browns",
-                "",
+                "bush",
                 "",
                 ""
             );
@@ -117,7 +117,7 @@ public class PlayerConfig {
                 "CB",
                 "https://www.clevelandbrowns.com/team/players-roster/vincent-gray/",
                 "browns",
-                "",
+                "gray",
                 "https://www.instagram.com/vincegray/",
                 "https://x.com/vincegray_?lang=en"
             );
@@ -128,7 +128,7 @@ public class PlayerConfig {
                 "DT",
                 "https://www.clevelandbrowns.com/team/players-roster/maurice-hurst/",
                 "browns",
-                "",
+                "hurst",
                 "https://www.instagram.com/mohurstjr/?hl=en",
                 "https://x.com/mohurstjr"
             );
@@ -139,7 +139,7 @@ public class PlayerConfig {
                 "OG",
                 "https://www.clevelandbrowns.com/team/players-roster/zak-zinter/",
                 "browns",
-                "",
+                "zinter",
                 "https://www.instagram.com/zakzinter/?hl=en",
                 "https://x.com/zak_zinter?lang=en"
             );
@@ -150,7 +150,7 @@ public class PlayerConfig {
                 "CB",
                 "https://www.dallascowboys.com/team/players-roster/jourdan-lewis/",
                 "cowboys",
-                "",
+                "lewis",
                 "https://www.instagram.com/jourdanjd_/?hl=en",
                 "https://x.com/JourdanJD?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
             );
@@ -161,7 +161,7 @@ public class PlayerConfig {
                 "TE",
                 "https://www.dallascowboys.com/team/players-roster/luke-schoonmaker/",
                 "cowboys",
-                "",
+                "schoon",
                 "https://www.instagram.com/schoonboyq/?hl=en",
                 "https://x.com/lukeschoonmaker?lang=en"
             );
@@ -172,7 +172,7 @@ public class PlayerConfig {
                 "DT",
                 "https://www.dallascowboys.com/team/players-roster/mazi-smith/",
                 "cowboys",
-                "",
+                "mazi",
                 "",
                 "https://x.com/mazismith?lang=en"
             );
@@ -183,7 +183,7 @@ public class PlayerConfig {
                 "OG",
                 "https://www.detroitlions.com/team/players-roster/graham-glasgow/",
                 "lions",
-                "",
+                "glasgow",
                 "https://www.instagram.com/gglasgow61/",
                 "https://x.com/gglasgow61?lang=en"
             );
@@ -194,7 +194,7 @@ public class PlayerConfig {
                 "DE",
                 "https://www.detroitlions.com/team/players-roster/aidan-hutchinson/",
                 "lions",
-                "",
+                "hutch",
                 "https://www.instagram.com/aidanhutch97/?hl=en",
                 "https://x.com/aidanhutch97?lang=en"
             );
@@ -205,7 +205,7 @@ public class PlayerConfig {
                 "TE",
                 "https://www.detroitlions.com/team/players-roster/sean-mckeon/",
                 "lions",
-                "",
+                "mckeon",
                 "https://www.instagram.com/mckeon_sean/?hl=en",
                 "https://x.com/mckeon_sean?lang=en"
             );
@@ -216,7 +216,7 @@ public class PlayerConfig {
                 "WR",
                 "https://www.detroitlions.com/team/players-roster/donovan-peoples-jones/",
                 "lions",
-                "",
+                "dpj",
                 "https://www.instagram.com/dpeoplesjones/?hl=en",
                 "https://x.com/dpeoplesjones"
             );
@@ -227,7 +227,7 @@ public class PlayerConfig {
                 "PK",
                 "https://www.detroitlions.com/team/players-roster/james-turner/",
                 "lions",
-                "",
+                "turner",
                 "https://www.instagram.com/jamesturner4/",
                 "https://x.com/jamesturner004?lang=en"
             );
@@ -238,7 +238,7 @@ public class PlayerConfig {
                 "DE",
                 "https://www.packers.com/team/players-roster/rashan-gary/",
                 "packers",
-                "",
+                "rashan",
                 "https://www.instagram.com/rashanagary/?hl=en",
                 "https://x.com/RashanAGary"
             );
@@ -249,7 +249,7 @@ public class PlayerConfig {
                 "CB",
                 "https://www.packers.com/team/players-roster/gemon-green/",
                 "packers",
-                "",
+                "green",
                 "https://www.instagram.com/1germ2x/",
                 "https://x.com/greengemon"
             );
@@ -260,7 +260,7 @@ public class PlayerConfig {
                 "WR",
                 "https://www.houstontexans.com/team/players-roster/nico-collins/",
                 "texans",
-                "",
+                "nico",
                 "https://www.instagram.com/ncollins_4/?hl=en",
                 "https://x.com/lbg_nico7?lang=en"
             );
@@ -271,7 +271,7 @@ public class PlayerConfig {
                 "OG",
                 "https://www.houstontexans.com/team/players-roster/ladarius-henderson/",
                 "texans",
-                "",
+                "henderson",
                 "https://www.instagram.com/ladarius.77/?hl=en",
                 ""
             );
@@ -282,7 +282,7 @@ public class PlayerConfig {
                 "LB",
                 "https://www.colts.com/team/players-roster/cameron-mcgrone/",
                 "colts",
-                "",
+                "mcgrone",
                 "https://www.instagram.com/mcgrone.strong/?hl=en",
                 "https://x.com/mcgrone_strong?lang=en"
             );
@@ -293,7 +293,7 @@ public class PlayerConfig {
                 "DE",
                 "https://www.colts.com/team/players-roster/kwity-paye/",
                 "colts",
-                "",
+                "paye",
                 "https://www.instagram.com/kwitypaye/?hl=en",
                 "https://x.com/officialkwity"
             );
@@ -304,7 +304,7 @@ public class PlayerConfig {
                 "DE",
                 "https://www.chiefs.com/team/players-roster/michael-danna/",
                 "chiefs",
-                "",
+                "danna",
                 "https://www.instagram.com/mikedanna4/?hl=en",
                 "https://x.com/m_danna4?lang=en"
             );
@@ -315,7 +315,7 @@ public class PlayerConfig {
                 "OG",
                 "https://www.chargers.com/team/players-roster/karsen-barnhart/",
                 "chargers",
-                "",
+                "barnhart",
                 "https://www.instagram.com/k_ballin__/?hl=en",
                 "https://x.com/k_ballin__?lang=en"
             );
@@ -326,7 +326,7 @@ public class PlayerConfig {
                 "ILB",
                 "https://www.chargers.com/team/players-roster/junior-colson/",
                 "chargers",
-                "",
+                "junior",
                 "https://www.instagram.com/junior_colson/?hl=en",
                 "https://x.com/juniorcolson?lang=en"
             );
@@ -337,7 +337,7 @@ public class PlayerConfig {
                 "DT",
                 "https://www.chargers.com/team/players-roster/christopher-hinton/",
                 "chargers",
-                "",
+                "hinton",
                 "",
                 ""
             );
@@ -348,7 +348,7 @@ public class PlayerConfig {
                 "WR",
                 "https://www.chargers.com/team/players-roster/cornelius-johnson/",
                 "chargers",
-                "",
+                "cojo",
                 "https://www.instagram.com/corneliusnation/?hl=en",
                 "https://x.com/corneliusnation?lang=en"
             );
@@ -359,7 +359,7 @@ public class PlayerConfig {
                 "FB",
                 "https://www.chargers.com/team/players-roster/ben-mason/",
                 "chargers",
-                "",
+                "mason",
                 "https://www.instagram.com/benchmason42/",
                 "https://x.com/benchmason42?lang=en"
             );
@@ -370,7 +370,7 @@ public class PlayerConfig {
                 "RB",
                 "https://www.therams.com/team/players-roster/blake-corum/",
                 "rams",
-                "",
+                "blake",
                 "https://www.instagram.com/blake_corum24/?hl=en",
                 "https://x.com/blake_corum"
             );
@@ -381,7 +381,7 @@ public class PlayerConfig {
                 "CB",
                 "https://www.therams.com/team/players-roster/josh-wallace/",
                 "rams",
-                "",
+                "wallace",
                 "https://www.instagram.com/joshwallace/",
                 "https://x.com/joshwallace_12?lang=en"
             );
@@ -392,7 +392,7 @@ public class PlayerConfig {
                 "TE",
                 "https://www.raiders.com/team/players-roster/zach-gentry/",
                 "raiders",
-                "",
+                "gentry",
                 "https://www.instagram.com/zgentry83/",
                 ""
             );
@@ -403,7 +403,7 @@ public class PlayerConfig {
                 "OT",
                 "https://www.miamidolphins.com/team/players-roster/ryan-hayes/",
                 "dolphins",
-                "",
+                "hayes",
                 "https://www.instagram.com/ryanhayes.76/?hl=en",
                 "https://x.com/ryanhayes_7122?lang=en"
             );
@@ -414,7 +414,7 @@ public class PlayerConfig {
                 "QB",
                 "https://www.vikings.com/team/players-roster/j-j-mccarthy/",
                 "vikings",
-                "",
+                "jj",
                 "https://www.instagram.com/jjmccarthy/?hl=en",
                 "https://x.com/jjmccarthy09?lang=en"
             );
@@ -425,7 +425,7 @@ public class PlayerConfig {
                 "S",
                 "https://www.vikings.com/team/players-roster/josh-metellus/",
                 "vikings",
-                "",
+                "metellus",
                 "https://www.instagram.com/noexcuses_23/?hl=en",
                 "https://x.com/NoExcuses_23?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
             );
@@ -436,7 +436,7 @@ public class PlayerConfig {
                 "OT",
                 "https://www.patriots.com/team/players-roster/mike-onwenu/",
                 "patriots",
-                "",
+                "owenu",
                 "https://www.instagram.com/michaelonwenu1/",
                 "https://x.com/_mxkey?lang=en"
             );
@@ -447,7 +447,7 @@ public class PlayerConfig {
                 "S",
                 "https://www.patriots.com/team/players-roster/jabrill-peppers/",
                 "patriots",
-                "",
+                "jabrill",
                 "https://www.instagram.com/teamjreall/?hl=en",
                 "https://x.com/JabrillPeppers?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
             );
@@ -458,7 +458,7 @@ public class PlayerConfig {
                 "OT",
                 "https://www.patriots.com/team/players-roster/andrew-stueber/",
                 "patriots",
-                "",
+                "stueber",
                 "https://www.instagram.com/andrew.stueber/",
                 "https://x.com/andrewstueber99"
             );
@@ -469,7 +469,7 @@ public class PlayerConfig {
                 "DE",
                 "https://www.patriots.com/team/players-roster/josh-uche/",
                 "patriots",
-                "",
+                "uche",
                 "https://www.instagram.com/josh_uche/?hl=en",
                 "https://x.com/_uche35?lang=en"
             );
@@ -480,7 +480,7 @@ public class PlayerConfig {
                 "LB",
                 "https://www.neworleanssaints.com/team/players-roster/khaleke-hudson/",
                 "saints",
-                "",
+                "hudson",
                 "https://www.instagram.com/bigleke7/?hl=en",
                 "https://x.com/KhalekeHudson?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
             );
@@ -491,7 +491,7 @@ public class PlayerConfig {
                 "OC",
                 "https://www.neworleanssaints.com/team/players-roster/cesar-ruiz/",
                 "saints",
-                "",
+                "ruiz",
                 "https://www.instagram.com/ceesruiz/",
                 "https://x.com/_overcees?lang=en"
             );
@@ -502,7 +502,7 @@ public class PlayerConfig {
                 "CB",
                 "https://www.giants.com/team/players-roster/david-long/",
                 "giants",
-                "",
+                "long",
                 "",
                 ""
             );
@@ -513,7 +513,7 @@ public class PlayerConfig {
                 "OG",
                 "https://www.giants.com/team/players-roster/jalen-mayfield/",
                 "giants",
-                "",
+                "mayfield",
                 "https://www.instagram.com/gucci_jay_/",
                 "https://x.com/jay_may_11?lang=en"
             );
@@ -524,7 +524,7 @@ public class PlayerConfig {
                 "OG",
                 "https://www.giants.com/team/players-roster/jon-runyan/",
                 "giants",
-                "",
+                "runyan",
                 "https://www.instagram.com/jon_run1/?hl=en",
                 ""
             );
@@ -535,7 +535,7 @@ public class PlayerConfig {
                 "DE",
                 "https://www.newyorkjets.com/team/players-roster/braiden-mcgregor/",
                 "jets",
-                "",
+                "mcgregor",
                 "https://www.instagram.com/braiden_mcgregor/?hl=en",
                 "https://x.com/braidenmcgregor?lang=en"
             );
@@ -546,7 +546,7 @@ public class PlayerConfig {
                 "OLB",
                 "https://www.philadelphiaeagles.com/team/players-roster/brandon-graham/",
                 "eagles",
-                "",
+                "brandon",
                 "https://www.instagram.com/sack_55/?hl=en",
                 ""
             );
@@ -557,7 +557,7 @@ public class PlayerConfig {
                 "OG",
                 "https://www.philadelphiaeagles.com/team/players-roster/trevor-keegan/",
                 "eagles",
-                "",
+                "keegan",
                 "https://www.instagram.com/trevor.keegan77/",
                 "https://x.com/bigtrevk?lang=en"
             );
@@ -568,7 +568,7 @@ public class PlayerConfig {
                 "WR",
                 "https://www.steelers.com/team/players-roster/roman-wilson/",
                 "steelers",
-                "",
+                "wilson",
                 "https://www.instagram.com/trilllroman/?hl=en",
                 "https://x.com/trilllroman?lang=en"
             );
@@ -579,7 +579,7 @@ public class PlayerConfig {
                 "TE",
                 "https://www.seahawks.com/team/players-roster/aj-barner/",
                 "seahawks",
-                "",
+                "barner",
                 "https://www.instagram.com/ajbarner88/?hl=en",
                 "https://x.com/_ajbarner_?lang=en"
             );
@@ -590,7 +590,7 @@ public class PlayerConfig {
                 "DE",
                 "https://www.seahawks.com/team/players-roster/mike-morris/",
                 "seahawks",
-                "",
+                "morris",
                 "https://www.instagram.com/the_moneymikee/?hl=en",
                 "https://x.com/mikemoris87"
             );
@@ -601,7 +601,7 @@ public class PlayerConfig {
                 "OC",
                 "https://www.seahawks.com/team/players-roster/olu-oluwatimi/",
                 "seahawks",
-                "",
+                "olu",
                 "https://www.instagram.com/big_olu55/?hl=en",
                 "https://x.com/bigolu55?lang=en"
             );
@@ -612,7 +612,7 @@ public class PlayerConfig {
                 "WR",
                 "https://www.49ers.com/team/players-roster/ronnie-bell/",
                 "niners",
-                "",
+                "bell",
                 "https://www.instagram.com/ronniebell_8/?hl=en",
                 "https://x.com/ronnieb_8?lang=en"
             );
@@ -623,7 +623,7 @@ public class PlayerConfig {
                 "PK",
                 "https://www.49ers.com/team/players-roster/jake-moody/",
                 "niners",
-                "",
+                "moody",
                 "https://www.instagram.com/jmoods_/?hl=en",
                 "https://x.com/jmoods13?lang=en"
             );
@@ -634,7 +634,7 @@ public class PlayerConfig {
                 "OC",
                 "https://www.49ers.com/team/players-roster/drake-nugent/",
                 "niners",
-                "",
+                "nugent",
                 "https://www.instagram.com/drakenugent9/?hl=en",
                 "https://x.com/drakenugent9?lang=en"
             );
@@ -645,7 +645,7 @@ public class PlayerConfig {
                 "CB",
                 "https://www.49ers.com/team/players-roster/ambry-thomas/",
                 "niners",
-                "",
+                "thomas",
                 "https://www.instagram.com/fastlife_von/?hl=en",
                 ""
             );
@@ -656,7 +656,7 @@ public class PlayerConfig {
                 "OG",
                 "https://www.buccaneers.com/team/players-roster/ben-bredeson/",
                 "buccaneers",
-                "",
+                "bredeson",
                 "https://www.instagram.com/bredesonben/?hl=en",
                 "https://x.com/ben_bredeson?lang=en"
             );
@@ -667,7 +667,7 @@ public class PlayerConfig {
                 "DE",
                 "https://www.tennesseetitans.com/team/players-roster/jaylen-harrell/",
                 "titans",
-                "",
+                "harrell",
                 "https://www.instagram.com/_jayharrell32/?hl=en",
                 "https://x.com/jayharrell32?lang=en"
             );
@@ -678,7 +678,7 @@ public class PlayerConfig {
                 "RB",
                 "https://www.tennesseetitans.com/team/players-roster/hassan-haskins/",
                 "titans",
-                "",
+                "haskins",
                 "https://www.instagram.com/h2_2535/?hl=en",
                 "https://x.com/h2_3125?lang=en"
             );
@@ -689,7 +689,7 @@ public class PlayerConfig {
                 "CB",
                 "https://www.commanders.com/team/players-roster/mike-sainristil/",
                 "commies",
-                "",
+                "frozone",
                 "https://www.instagram.com/mikesainristil/?hl=en",
                 "https://x.com/MikeSainristil"
             );

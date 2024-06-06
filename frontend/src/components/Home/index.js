@@ -6,12 +6,12 @@ import blake from '../../assets/teams/rams/blake.png';
 import brandon from '../../assets/teams/eagles/brandon.png';
 import mikey from '../../assets/teams/commies/frozone.png';
 import hutch from '../../assets/teams/lions/hutch.png';
-import jabrill from '../../assets/teams/pats/jabrill.png';
-import jj from '../../assets/teams/viks/jj.png';
+import jabrill from '../../assets/teams/patriots/jabrill.png';
+import jj from '../../assets/teams/vikings/jj.png';
 import kris from '../../assets/teams/bengals/kris.png';
 import moody from '../../assets/teams/niners/moody.png';
 import nico from '../../assets/teams/texans/nico.png';
-import rashan from '../../assets/teams/pack/rashan.png';
+import rashan from '../../assets/teams/packers/rashan.png';
 import junior from '../../assets/teams/chargers/junior.png';
 import dpj from '../../assets/teams/lions/dpj.png';
 

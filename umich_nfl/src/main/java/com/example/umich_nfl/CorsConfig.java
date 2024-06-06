@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:3000", "https://master--problue.netlify.app/")
+                        .allowedOrigins("http://localhost:3000", "https://main--problue.netlify.app/", "https://problue.netlify.app")
                         .allowedMethods("GET");
             }
         };
