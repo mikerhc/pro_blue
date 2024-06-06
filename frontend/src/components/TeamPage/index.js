@@ -16,13 +16,6 @@ const TeamPage = ({ playerData, teamData }) => {
   const team = teamData.find(team => team.url === teamName);
   const players = playerData.filter(player => team.name === player.team);
 
-  players.map(player => {
-    console.log(player)
-    console.log(getPlayerImage(team.url, player.imageUrl));
-
-  })
-  //console.log(players);
-
   useEffect(() => {
     const fetchNextGame = async() => {
       if(!team) return;

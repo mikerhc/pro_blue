@@ -16,8 +16,6 @@ const TeamCards = ({ playerData, teamData }) => {
         setExpandedTeam(expandedTeam === teamId ? null : teamId);
     };
 
-    //console.log(%PUBLIC_URL%)
-
     return (
       <div className='team-card-container'>
         {teamData.map((team) => (
