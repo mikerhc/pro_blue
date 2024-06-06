@@ -10,12 +10,12 @@ const images = require.context('../../assets/teams', true, /\.png$/);
 //actually get the images
 const getPlayerImage = (teamName, playerName) => images(`./${teamName}/${playerName}.png`);
 
-const getTeam =(teamName) => {
+const getTeam = (teamName) => {
   //check if the team is the niners, only team with a number in their name
-  if (teamName == 'San Francisco 49ers'){
+  if (teamName === 'San Francisco 49ers'){
     return 'niners';
   }
-  else if (teamName == 'Washington Commanders'){
+  else if (teamName === 'Washington Commanders'){
     return 'commies';
   }
   else{
